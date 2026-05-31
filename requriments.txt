@@ -1,0 +1,56 @@
+skin_cancer_flask_app/
+├── app/
+│   ├── __init__.py
+│   ├── routes.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── model_loader.py
+│   │   └── vit_model.py
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── data_loader.py
+│   │   ├── visualization.py
+│   │   └── helpers.py
+│   ├── training/
+│   │   ├── __init__.py
+│   │   └── trainer.py
+│   ├── static/
+│   │   ├── css/
+│   │   │   ├── style.css
+│   │   │   └── dashboard.css
+│   │   ├── js/
+│   │   │   ├── main.js
+│   │   │   └── chart.js
+│   │   └── images/
+│   └── templates/
+│       ├── base.html
+│       ├── index.html
+│       ├── admin.html
+│       ├── training.html
+│       ├── predict.html
+│       ├── results.html
+│       └── visualization.html
+├── config.py
+├── requirements.txt
+├── run.py
+├── train_flask.py
+└── README.md
+
+
+torch>=1.9.0
+torchvision>=0.10.0
+Pillow>=8.0.0
+numpy>=1.21.0
+tqdm>=4.60.0
+tensorboard>=2.7.0
+scikit-learn>=1.0.0
+matplotlib>=3.5.0
+opencv-python>=4.5.0
+flask>=2.0.0
+flask-wtf>=1.0.0
+wtforms>=3.0.0
+plotly>=5.0.0
+seaborn>=0.11.0
+grad-cam>=1.4.6
+timm>=0.6.0
+torchcam>=0.3.2
